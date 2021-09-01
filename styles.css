@@ -31,6 +31,12 @@ section {
 	padding-right: 27rem;
 }
 
+.navbar-toggler-icon {
+	background-image: url(images/icon-hamburger.svg);
+	width: 2rem;
+	margin-right: 1rem;
+}
+
 .nav-item, .last-nav-link {
 	font-size: 13px;
 	padding: 0 .5rem;
@@ -41,13 +47,27 @@ section {
 	font-weight: 700;
 }
 
+.nav-link:hover {
+	color: hsl(227, 12%, 61%);
+}
+
+a:hover {
+	color: hsl(0, 0%, 95%);
+	text-decoration: none;
+}
+
 .common-link {
   	background-color: hsl(12, 88%, 59%);
+  	box-shadow: 0px 5px 10px 0px rgba(242,95,58,0.91);
   	color: white;
   	font-size: 12px;
   	padding: .7rem 1.8rem;
   	border-radius: 20px;
  		vertical-align: baseline;
+}
+
+.common-link:hover {
+  	background-color: rgba(242,95,58,0.8);
 }
 
 .last-nav-link {
@@ -271,7 +291,14 @@ dd {
  		position: absolute;
  		right: 8.3%;
  		top: 38%;
+		z-index: 1;
 }
+
+.colored-link:hover {
+   background-color: hsl(0, 0%, 98%);
+	 color: rgba(242,95,58,0.5);
+}
+
 
 .colored-img {
 	position: absolute;
@@ -343,6 +370,10 @@ form button {
 	border-radius: 50px;
 }
 
+form button:hover {
+  	background-color: rgba(242,95,58,1);
+}
+
 .socials {
 	position: absolute;
 	top: 62%;
@@ -360,13 +391,79 @@ footer span {
 	font-size: 10px;
 }
 
-/* Active States */
+/* Additional Features */
 
-a:hover {
-	color: hsl(0, 0%, 95%);
-	text-decoration: none;
-}
 
-.nav-link:hover {
-	color: hsl(227, 12%, 61%);
+@media screen and (min-width: 500px) and (max-width: 720px) {
+	body {
+		background-size: 99%;
+	}
+
+	.navbar-brand {
+		margin-left: 1.3rem;
+	}
+
+	.navbar-toggler {
+		margin-right: 2.3rem;
+	}
+
+	.navbar-collapse {
+		text-align: center;
+		margin: 2rem 4rem 2rem 1.5rem;
+		padding: 2rem;
+		background-color: white;
+		border-radius: .5rem;
+	}
+
+	.nav-link {
+		font-size: 1rem;
+		margin: .5rem auto;
+	}
+
+	.img-block {
+		position: absolute;
+		display:  block;
+		margin: -35.25rem 2rem 10rem 3.7rem;
+	}
+
+	.graph-img {
+		width: 100%;
+	}
+
+	/* HEAD */
+
+	.head {
+		margin: 22rem 0 0 0;
+		padding: 0 2.5rem 0 0;
+	}
+
+	.head-text {
+		position: relative;
+		margin: 0;
+		text-align: center;
+	}
+
+	p {
+		display: block;
+		width:  21rem;
+		margin: 5rem;
+		text-align: center;
+	}
+
+	h1, h2 {
+		font-weight: 700;
+		font-size: 3rem;
+		color:  hsl(228, 39%, 23%);
+	}
+
+	.img-block {
+		position: relative;
+	}
+
+	.head-link {
+		position: relative;
+		right: 0;
+		top: 2rem;
+	}
+
 }
